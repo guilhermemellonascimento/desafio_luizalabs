@@ -3,8 +3,6 @@
 module Api
   module V1
     class FilesController < ApplicationController
-      skip_before_action :verify_authenticity_token
-
       # POST /api/v1/files/import
       def import
         if params[:file].present?
