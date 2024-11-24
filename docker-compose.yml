@@ -1,0 +1,30 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -b '0.0.0.0'"
+    volumes:
+      - ".:/myapp"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+    environment:
+      - RAILS_ENV=production
+    networks:
+      - myapp_network
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    networks:
+      - myapp_network
+
+volumes:
+  sqlite_data:
+    driver: local
+
+networks:
+  myapp_network:
+    driver: bridge
