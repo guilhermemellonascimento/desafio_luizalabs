@@ -92,7 +92,7 @@ curl -X GET http://34.205.71.232/api/v1/users
 ## Testes
 Os testes foram escritos com rspec e a análise da cobertura com SimpleCov
 
-[![CI](https://github.com/guilhermemellonascimento/magalu/actions/workflows/ci.yml/badge.svg)](https://github.com/guilhermemellonascimento/magalu/actions/workflows/ci.yml)
+[![CI](https://github.com/guilhermemellonascimento/desafio_luizalabs/actions/workflows/ci.yml/badge.svg)](https://github.com/guilhermemellonascimento/desafio_luizalabs/actions/workflows/ci.yml)
 
 ```
 bundle exec rspec
