@@ -20,6 +20,12 @@ gem "solid_cache"
 gem "solid_queue"
 gem "solid_cable"
 
+gem 'active_model_serializers', '~> 0.8.4'
+gem 'byebug'
+gem 'kaminari'
+gem 'redis'
+gem "sidekiq"
+
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
@@ -44,6 +50,28 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem 'dotenv-rails'
 end
 
+group :development do
+  # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem 'rubocop', require: false
+  gem 'rubocop-performance'
+  gem 'rubocop-rails'
+  gem 'rubocop-rspec'
+  gem "web-console"
+end
 
+group :test do
+  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem "capybara"
+  gem 'database_cleaner-active_record'
+  gem 'factory_bot_rails', '~> 6.0'
+  gem 'faker'
+  gem 'rspec-rails'
+  gem "selenium-webdriver"
+  gem 'shoulda-matchers', '~> 5.0'
+  gem 'simplecov', require: false
+  gem 'simplecov-json'
+end
