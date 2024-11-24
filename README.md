@@ -97,3 +97,19 @@ Os testes foram escritos com rspec e a análise da cobertura com SimpleCov
 ```
 bundle exec rspec
 ```
+
+## Rodar local
+ 
+.env
+```
+REDIS_URL=redis://localhost:6379/0
+```
+
+```
+rails db:migrate
+rails s
+```
+
+```
+curl -X GET http://localhost/api/v1/users
+```
