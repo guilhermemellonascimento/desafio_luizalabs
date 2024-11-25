@@ -71,7 +71,7 @@ group :test do
   gem 'faker'
   gem 'rspec-rails'
   gem "selenium-webdriver"
-  gem 'shoulda-matchers', '~> 5.0'
+  gem 'shoulda-matchers', '~> 6.4'
   gem 'simplecov', require: false
   gem 'simplecov-json'
 end
