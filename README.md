@@ -43,9 +43,8 @@
 
 ### Workflow  
 
-![image](https://github.com/user-attachments/assets/1504ebb6-e993-4492-b571-51a046e5067e)
-![image](https://github.com/user-attachments/assets/634aa4fe-3691-462f-a5ad-6759050dffa6)
-
+![image](https://github.com/user-attachments/assets/6a92e721-3a63-4684-a984-eeaa292a7645)
+![image](https://github.com/user-attachments/assets/116d978f-52ec-49e5-aa82-cfe8289a9d3e)
 
 ## Implementação
 
